@@ -5,7 +5,7 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { Parser } from 'html-to-react'
 import { createRenderer } from 'vue-server-renderer'
-import VueSlickCarousel from '@/VueSlickCarousel'
+import VueSlick3 from '@/VueSlick3'
 import ReactSlickCarousel from 'react-slick'
 import prettyDiff from 'prettydiff'
 import stripHtmlComments from 'strip-html-comments'
@@ -17,10 +17,10 @@ const vueServerRender = async (itemHtmls = [], settings = {}) => {
   const className = settings.className || ''
   const renderedString = await vueRenderer.renderToString(
     new Vue({
-      template: `<vue-slick-carousel v-bind="settings" class="${className}">${itemHtmls.join(
+      template: `<vue-slick3 v-bind="settings" class="${className}">${itemHtmls.join(
         '',
-      )}</vue-slick-carousel>`,
-      components: { VueSlickCarousel },
+      )}</vue-slick3>`,
+      components: { VueSlick3 },
       props: {
         settings: {
           type: Object,

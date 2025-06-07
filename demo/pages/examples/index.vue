@@ -15,7 +15,7 @@
         :class="{ 'carousel-wrapper': true, 'as-nav-for': config.asNavFor }"
       >
         <v-col cols="8" class="pa-7">
-          <VueSlickCarousel
+          <VueSlick3
             v-bind="config.settings"
             :class="classes"
             ref="c1"
@@ -34,7 +34,7 @@
                 {{ config.settings.variableWidth ? `${width}px` : index + 1 }}
               </h1>
             </div>
-          </VueSlickCarousel>
+          </VueSlick3>
         </v-col>
       </v-row>
       <v-row
@@ -45,7 +45,7 @@
         class="carousel-wrapper as-nav-for"
       >
         <v-col cols="8" class="pa-7">
-          <VueSlickCarousel
+          <VueSlick3
             v-bind="config.asNavFor.settings"
             :class="classes"
             ref="c2"
@@ -64,7 +64,7 @@
                 }}
               </h1>
             </div>
-          </VueSlickCarousel>
+          </VueSlick3>
         </v-col>
       </v-row>
       <v-row class="pl-7 pr-7"><hr width="100%" /></v-row>
@@ -103,10 +103,10 @@ import '@/slick-theme.css'
 
 import configs from './configs'
 
-const exampleVueTemplate = `<VueSlickCarousel v-bind="settings">
+const exampleVueTemplate = `<VueSlick3 v-bind="settings">
   <div><h3>1</h3></div>
   /*...*/
-</VueSlickCarousel>`
+</VueSlick3>`
 
 export default {
   name: 'ExamplesPage',

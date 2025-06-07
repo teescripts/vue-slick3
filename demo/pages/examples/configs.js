@@ -1,26 +1,26 @@
-const verticalTemplate = `<VueSlickCarousel v-bind="settings" :style="{height: '372px'}">
+const verticalTemplate = `<VueSlick3 v-bind="settings" :style="{height: '372px'}">
   <div><h3>1</h3></div>
   /*...*/
-</VueSlickCarousel>`
-const imageTemplate = `<VueSlickCarousel v-bind="settings">
+</VueSlick3>`
+const imageTemplate = `<VueSlick3 v-bind="settings">
   <div><img src="https://picsum.photos/300/300" /></div>
   /*...*/
-</VueSlickCarousel>`
-const asNavForTemplate = `<VueSlickCarousel
+</VueSlick3>`
+const asNavForTemplate = `<VueSlick3
   ref="c1"
   :asNavFor="$refs.c2"
   :focusOnSelect="true">
   <div><h3>1</h3></div>
   /*...*/
-</VueSlickCarousel>`
-const asNavForTemplate2 = `<VueSlickCarousel
+</VueSlick3>`
+const asNavForTemplate2 = `<VueSlick3
   ref="c2"
   :asNavFor="$refs.c1"
   :slidesToShow="4"
   :focusOnSelect="true">
   <div><h3>1</h3></div>
   /*...*/
-</VueSlickCarousel>`
+</VueSlick3>`
 
 export default {
   simple: {

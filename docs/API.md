@@ -1,4 +1,4 @@
-# VueSlickCarousel
+# VueSlick3
 
 ## Props
 
@@ -6,10 +6,10 @@
 
 ```html
 <template>
-  <VueSlickCarousel :arrows="true" :dots="true">
+  <VueSlick3 :arrows="true" :dots="true">
     <div><h3>1</h3></div>
     /*...*/
-  </VueSlickCarousel>
+  </VueSlick3>
 </template>
 ```
 
@@ -17,10 +17,10 @@
 
 ```html
 <template>
-  <VueSlickCarousel v-bind="settings">
+  <VueSlick3 v-bind="settings">
     <div><h3>1</h3></div>
     /*...*/
-  </VueSlickCarousel>
+  </VueSlick3>
 </template>
 <script>
   export default {
@@ -38,7 +38,7 @@
 
 ### All Props
 
-Check out [demo examples](https://gs-shop.github.io/vue-slick-carousel/#/example) for settings usage.
+Check out [demo examples](https://github.com/teescripts/vue-slick3/#/example) for settings usage.
 
 | Prop name        | Description                                                                                                                                                                      | Type    | Values                | Default      |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------- | ------------ |
@@ -86,10 +86,10 @@ Check out [demo examples](https://gs-shop.github.io/vue-slick-carousel/#/example
 
 ```html
 <template>
-  <VueSlickCarousel ref="carousel">
+  <VueSlick3 ref="carousel">
     <div><h3>1</h3></div>
     /*...*/
-  </VueSlickCarousel>
+  </VueSlick3>
   <button @click="showNext">show me the next</button>
 </template>
 <script>
@@ -120,10 +120,10 @@ Check out [demo examples](https://gs-shop.github.io/vue-slick-carousel/#/example
 
 ```html
 <template>
-  <VueSlickCarousel @init="onInitCarousel">
+  <VueSlick3 @init="onInitCarousel">
     <div><h3>1</h3></div>
     /*...*/
-  </VueSlickCarousel>
+  </VueSlick3>
 </template>
 <script>
   export default {
@@ -155,7 +155,7 @@ Check out [demo examples](https://gs-shop.github.io/vue-slick-carousel/#/example
 
 ```html
 <template>
-  <VueSlickCarousel @init="onInitCarousel">
+  <VueSlick3 @init="onInitCarousel">
     <div><h3>1</h3></div>
     /*...*/
     <template #prevArrow="arrowOption">
@@ -169,7 +169,7 @@ Check out [demo examples](https://gs-shop.github.io/vue-slick-carousel/#/example
         {{ page }}
       </div>
     </template>
-  </VueSlickCarousel>
+  </VueSlick3>
 </template>
 ```
 

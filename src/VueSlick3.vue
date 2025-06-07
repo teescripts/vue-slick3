@@ -15,7 +15,7 @@ import InnerSlider from './InnerSlider'
 const enquire = canUseDOM() && require('enquire.js')
 
 export default {
-  name: 'VueSlickCarousel',
+  name: 'VueSlick3',
   components: {
     InnerSlider,
   },
