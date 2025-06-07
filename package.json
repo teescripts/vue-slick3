@@ -3,13 +3,11 @@
   "version": "1.1.1",
   "description": "Vue Slick Carousel with True SSR Written for Faster Luxstay",
   "keywords": [
-    "vue",
-    "slick",
-    "carousel",
+    "vue3",
+    "gallery",
     "slider",
-    "ssr",
-    "pwa",
-    "nuxt"
+    "carousel",
+    "slick"
   ],
   "homepage": "https://github.com/teescripts/vue-slick3/",
   "bugs": {
